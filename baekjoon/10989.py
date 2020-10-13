@@ -15,8 +15,6 @@ for _ in range(n):
 
 sorted_num_items = sorted(num_dict.items(), key=lambda x: x[0])
 
-last_item = sorted_num_items[-1]
-
 for item in sorted_num_items:
     string = f"{item[0]}\n"*item[1]
     string = string[:-1]
