@@ -33,7 +33,7 @@ max_len = round(sum(exists)/n)
 def binary_search():
     start = 0
     end = max_len
-    answer_list = []
+    answer = 0
 
     while start <= end:
         if end == 1:
@@ -50,9 +50,9 @@ def binary_search():
             end = mid - 1
         else:
             start = mid + 1
-            answer_list.append(mid)
+            answer = mid
 
-    print(max(answer_list))
+    print(mid)
 
 
 binary_search()
