@@ -31,16 +31,12 @@ max_len = round(sum(exists)/n)
 
 
 def binary_search():
-    start = 0
+    start = 1
     end = max_len
     answer = 0
 
     while start <= end:
-        if end == 1:
-            print(1)
-            return
-        else:
-            mid = (start + end) // 2
+        mid = (start + end) // 2
 
         lan_count = 0
         for lan in exists:
@@ -52,7 +48,7 @@ def binary_search():
             start = mid + 1
             answer = mid
 
-    print(mid)
+    print(answer)
 
 
 binary_search()
